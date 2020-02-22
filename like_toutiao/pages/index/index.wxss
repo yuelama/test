@@ -1,0 +1,150 @@
+.news-type-wrapper {
+  position: fixed;
+  display: flex;
+  background-color: #03A9F4;
+  padding: 8rpx 0rpx;
+  top: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  height: 46rpx;
+  z-index: 999;
+}
+
+.news-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #ffffff;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  font-weight: 200;
+  width: 690rpx;
+}
+
+.news-type-checked {
+  color: #ffffff;
+  font-weight: 900;
+  border-bottom: 2px solid #ffffff;
+}
+
+.news-icon {
+  width: 50rpx;
+  height: 40rpx;
+  border-left: 1rpx solid #B3E5FC;
+}
+
+.news-type-image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 5rpx;
+}
+
+.swiper-wrapper {
+  margin-top: 60rpx;
+  height: 400rpx;
+}
+
+.slide-image {
+  width: 750rpx;
+  height: 400rpx;
+  z-index: -1;
+}
+
+.swiper-item {
+  position: relative;
+}
+
+.swiper-tag {
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  padding: 4rpx 24rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  background-color: #03A9F4;
+  border-bottom-left-radius: 20rpx;
+}
+
+.swiper-title {
+  position: absolute;
+  bottom: 40rpx;
+  background-color: rgba(117, 117, 117, 0.7);
+  color: #ffffff;
+  padding: 16rpx 16rpx 0rpx 16rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  width: 750rpx;
+  word-wrap: break-all;
+}
+
+.swiper-subtitle {
+  position: absolute;
+  background-color: rgba(117, 117, 117, 0.7);
+  color: rgb(224, 224, 224);
+  height: 40rpx;
+  width: 750rpx;
+  font-size: 20rpx;
+  bottom: 0rpx;
+  left: 0rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-type-button {
+  background-color: transparent;
+  padding: 0rpx;
+  margin-left: 0rpx;
+  margin-top: -7rpx;
+}
+
+/* 去除button边框 */
+.news-type-button::after{
+  border:none;
+}
+
+.swiper-source {
+  padding-left: 16rpx;
+}
+
+.swiper-date {
+  padding-right: 16rpx;
+}
+
+.news-list {
+  padding: 24rpx;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+}
+
+.news-text {
+  width: 500rpx;
+  margin-right: 30rpx; 
+}
+
+.news-title {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: #212121;
+}
+
+.news-subtitle {
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #757575;
+}
+
+.news-image {
+  width: 172rpx;
+  height: 120rpx;
+}
+
+/* 去除最后一个新闻的下边线 */
+.news-item:last-child {
+  border-bottom: 0px;
+}

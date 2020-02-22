@@ -1,0 +1,1 @@
+<button  open-type="getUserInfo" bindgetuserinfo="updateUserInfo">注册用户</button>

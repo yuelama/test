@@ -1,0 +1,9 @@
+<view class='news-list'>
+  <view class='news-item' wx:for="{{news}}" wx:key="item.id" data-newsId="{{item.id}}" bindtap='goToDetail'>
+    <view class='news-text'>
+      <view class='news-title'>{{!!item.title?item.title: '震今|未知标题'}}</view>
+      <view class='news-subtitle'>{{!!item.author?item.author: '未知来源'}} </view>
+    </view>
+    <image src="{{!!item.newsimg?item.newsimg: '/images/default-news.jpg'}}" class="news-image" />
+  </view>
+</view>

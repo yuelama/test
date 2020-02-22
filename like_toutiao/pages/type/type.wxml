@@ -1,0 +1,16 @@
+<!-- 有用户信息才显示头像和昵称 -->
+<view class='userinfo' wx:if="{{hasUserInfo}}">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class='tag-list'>
+  <view wx:for="{{typeStatus}}"
+        wx:for-index="j"
+        wx:for-item="type"
+        wx:key="item.code"
+        class="{{type.ifChecked ? 'tag-item tag-item-checked': 'tag-item'}}"
+        bindtap='onChangeUserTags'
+        data-changingType="{{j}}">
+    {{typeValue[j]}}
+  </view>
+</view>

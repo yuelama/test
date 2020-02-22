@@ -1,0 +1,22 @@
+<import src="../../../wxParse/wxParse.wxml"/> 
+<view class="header-divider"></view>
+<view class='container'>
+  <view class="title-wrapper">
+    <view class='title-text'>{{!!news.title? news.title: '震今|未知标题'}}</view>
+    <view class='subtitle-wrapper'>
+      <!-- 防止在新闻数据未加载完成时显示undefined -->
+      <view>{{!!news.username? news.username: '未知来源'}} {{!!news.createtime? news.createtime: '未知发布时间'}}</view>
+      <!-- 防止在新闻数据未加载完成时显示'阅读量' -->
+      <view>{{!!news.readnums? '阅读量:' + news.readnums: ''}}</view>
+    </view>
+  </view>
+	<view class="wxParse">
+	<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+	</view>
+
+  <view class='likefuqin'>
+    <view class='likebeijing'>
+      <icon type="success" data-newid="{{news.id}}"  color="#C9C9C9" size="50" class="post" bindtap='shoucang' />
+    </view>
+  </view>
+</view>
